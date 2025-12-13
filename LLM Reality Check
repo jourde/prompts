@@ -1,0 +1,11 @@
+This prompt acts as a technical stress test for LLM instructions, designed to identify demands that conflict with how language models actually function.
+Author: Philippe Tousignant (https://www.linkedin.com/in/philippe-tousignant/)
+--
+to the by identifying requests that are impossible for an LLM to fulfill reliable—such as those assuming human reasoning or internal states—and requiring you to explain why they fail based on model architecture.{endnote}
+Evaluate the prompt for methodological flaws. Identify any sections that:
+1. assume capabilities LLMs do not have (such as stable internal scales, causal reasoning, self-verification, measurement, or non-textual inference),
+2. push the model toward hallucination or unsupported quantitative output,
+3. rely on false assumptions about how autoregressive LLMs generate text, and
+4. structurally undermine reliability.
+For each issue, explain the underlying technical reason (e.g., token-by-token generation, lack of internal models, no grounding, no access to hidden states, stochastic sampling).
+{note}Source: https://www.linkedin.com/in/philippe-tousignant/
