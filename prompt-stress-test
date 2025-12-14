@@ -61,10 +61,16 @@ For each issue, use this template:
 
 List any phrases in the Target Prompt that are **technically ambiguous or popularly mis-stated** (e.g., “lack of internal models”, “token-by-token” oversimplifications). For each, propose a more precise wording.
 
-#### C) Top risks and recommended tightened version
+#### C) Top risks
 
-1. Rank the **top three** reliability risks (most severe first) with one-sentence justification each.
-2. Provide a revised version of the Target Prompt that fixes the top risks while preserving intent.
+Rank the **top three** reliability risks (most severe first) with one-sentence justification each.
+
+### D) Summary
+Summarise your analysis in one paragraph.
+
+#### E) Recommended tightened version
+
+Provide a revised version of the Target Prompt that fixes the top risks while preserving intent.
 
 ---
 
