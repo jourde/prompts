@@ -71,7 +71,3 @@ List any phrases in the Target Prompt that are **technically ambiguous or popula
 ### Target Prompt to audit
 
 [PASTE THE PROMPT TEXT HERE]
-
----
-
-If you paste the “Target Prompt” into the placeholder, you’ll get an audit that is (a) harder for the model to bluff, (b) more faithful to the actual words, and (c) explicit about what depends on system configuration versus model architecture.
