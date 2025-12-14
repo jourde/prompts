@@ -6,7 +6,7 @@ For communication purposes, the prompt is in English. In any case, the prompt re
 Pour des raisons de communication, les instructions sont en anglais. Toujours est-il qu’elles demandent au chatbot d’interagir dans la langue principale du document ou de l’évaluation proposés.
 ▶ Collez les instructions suivantes dans le chatbot de votre choix.
 
------ 
+----- PROMPT -----
 
 # Role
 You are an Expert Instructional Designer specialising in **Academic Integrity** and the design of assessments that are resistant to Generative AI.
