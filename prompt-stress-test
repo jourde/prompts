@@ -1,11 +1,77 @@
 This prompt acts as a technical stress test for LLM instructions, designed to identify demands that conflict with how language models actually function.
+
+---- ORIGINAL PROMPT ----
 Author: Philippe Tousignant (https://www.linkedin.com/in/philippe-tousignant/)
-
----- PROMPT ----
-
+--
 Evaluate the prompt for methodological flaws. Identify any sections that:
 1. assume capabilities LLMs do not have (such as stable internal scales, causal reasoning, self-verification, measurement, or non-textual inference),
 2. push the model toward hallucination or unsupported quantitative output,
 3. rely on false assumptions about how autoregressive LLMs generate text, and
 4. structurally undermine reliability.
 For each issue, explain the underlying technical reason (e.g., token-by-token generation, lack of internal models, no grounding, no access to hidden states, stochastic sampling)
+
+---- REVISED PROMPT ----
+Below is a depth-optimised, drop-in prompt you can use to get a more methodologically reliable audit (with stronger constraints against speculation and generic “LLM limitations” essays).
+---
+
+## Prompt (depth-optimised audit)
+
+**Role:** You are a methodological auditor of prompts for large language models.
+
+**Task:** Analyse the *Target Prompt* (provided below) for methodological flaws. Your analysis must be anchored in exact text spans.
+
+### Output rules (strict)
+
+* Only flag an issue if you can **quote the exact phrase** that causes it.
+* For each issue, you must:
+
+  * classify it under one or more of the four categories listed below,
+  * explain the failure mode in plain terms,
+  * give the underlying technical reason **without claiming access to runtime internals**,
+  * state whether the issue is **Definite** or **Context-dependent**,
+  * provide a **mitigation** (a rewrite or constraint) that directly addresses the quoted phrase.
+* Do **not** assume the system has tools (browsing, calculators, RAG, plugins) unless the Target Prompt explicitly mentions them.
+* Do **not** assume a decoding method (sampling vs greedy) unless the Target Prompt specifies it. If decoding matters, label it **Context-dependent** and state the assumption explicitly.
+* Avoid vague claims (e.g., “LLMs can’t reason”); be precise about what fails (e.g., “no grounded measurement channel”, “cannot self-verify factual claims without external evidence”, “interface does not expose activations”).
+* If the Target Prompt contains **no** issues under a category, explicitly write “No issues found” for that category.
+
+### Categories to test (must cover all)
+
+1. **Assumed capabilities** the model/system may not have (e.g., stable internal scales, measurement, self-verification, non-textual inference, tool access).
+2. **Hallucination pressure** or cues likely to elicit unsupported specifics/quantification.
+3. **False assumptions about autoregressive generation** (mischaracterisations of how token prediction, context conditioning, or uncertainty behave).
+4. **Structural reliability problems** (underspecified scope, missing constraints, ambiguous success criteria, incentives for generic answers, no requirement for evidence anchoring).
+
+### Required format
+
+Produce the following sections:
+
+#### A) Issue inventory (span-anchored)
+
+For each issue, use this template:
+
+* **Quoted span:** “…”
+* **Category tags:** [1] [2] [3] [4]
+* **Why this undermines reliability:**
+* **Technical reason (mechanistic, non-speculative):**
+* **Definite vs Context-dependent:**
+* **Mitigation / rewrite:**
+
+#### B) Terminology and technical-accuracy check
+
+List any phrases in the Target Prompt that are **technically ambiguous or popularly mis-stated** (e.g., “lack of internal models”, “token-by-token” oversimplifications). For each, propose a more precise wording.
+
+#### C) Top risks and recommended tightened version
+
+1. Rank the **top three** reliability risks (most severe first) with one-sentence justification each.
+2. Provide a revised version of the Target Prompt that fixes the top risks while preserving intent.
+
+---
+
+### Target Prompt to audit
+
+[PASTE THE PROMPT TEXT HERE]
+
+---
+
+If you paste the “Target Prompt” into the placeholder, you’ll get an audit that is (a) harder for the model to bluff, (b) more faithful to the actual words, and (c) explicit about what depends on system configuration versus model architecture.
