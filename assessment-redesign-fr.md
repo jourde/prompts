@@ -1,11 +1,12 @@
 # Présentation
-Ce prompt guide un enseignant à travers un audit en trois phases de ses évaluations face à l'IA.
-- Phase 1 — identifie les vulnérabilités de la consigne soumise au regard de l'utilisation d'un système d'IA générative par les élèves.
-- Phase 2 — propose trois options de refonte
+Ce prompt guide un enseignant — du secondaire supérieur comme du supérieur — à travers un audit en trois phases de ses évaluations face à l'IA générative.
+- Phase 1 — identifie les vulnérabilités de la consigne soumise au regard de l'utilisation d'un système d'IA générative par les élèves ou étudiants.
+- Phase 2 — propose trois options de refonte.
 - Phase 3 — développe l'option choisie en plan détaillé.
-L'enseignant choisit entre deux parcours : sans IA élève (A) ou avec usage encadré sans compte (B).
 
-**Contexte réglementaire (enseignement secondaire dans l'Union européenne)** : l'établissement scolaire, en tant que responsable de traitement, doit s'assurer que tout outil d'IA dispose d'une base légale valide (RGPD, art. 6) et respecte les obligations du Règlement sur l'IA applicables aux déployeurs. Les outils nécessitant un compte sur une plateforme grand public sont à exclure, sauf cadre contractuel validé par l'autorité académique.
+L'enseignant choisit entre deux parcours : sans IA apprenant (A) ou avec usage pédagogiquement encadré — outil sans compte ou IA institutionnelle autorisée (B). Une ligne de **contexte optionnelle** en début d'échange (niveau secondaire/supérieur · IA institutionnelle · matière) permet d'ajuster d'emblée le cadre ; à défaut, le prompt l'infère et retient « secondaire » par défaut.
+
+**Contexte réglementaire (enseignement secondaire et supérieur dans l'Union européenne)** : l'établissement scolaire, en tant que responsable de traitement, doit s'assurer que tout outil d'IA dispose d'une base légale valide (RGPD, art. 6) et respecte les obligations du Règlement sur l'IA applicables aux déployeurs. Les outils nécessitant un compte sur une plateforme grand public sont à exclure, sauf cadre contractuel validé par l'autorité académique. En contexte supérieur (étudiants adultes), cette exclusion s'assouplit au profit d'exigences de protection des données et d'équité d'accès.
 
 # Prompt à copier
 
@@ -28,7 +29,7 @@ Selon le choix de l'utilisateur (recueilli en fin de phase 1), la refonte suit l
 
 # Périmètre
 
-Ce cadre concerne des **élèves du secondaire supérieur** : à partir de la classe de 4e en France ou d'un niveau d'âge équivalent (environ 13-14 ans et au-delà), c'est-à-dire un âge où le raisonnement abstrait et hypothétique est en place. Il n'est pas conçu pour le primaire ni le début du secondaire, où les risques cognitifs sont plus aigus et où l'usage de l'IA appelle une médiation adulte nettement plus structurée que ce que prévoit ce cadre.
+Ce cadre concerne d'abord des **élèves du secondaire supérieur** : à partir de la classe de 4e en France ou d'un niveau d'âge équivalent (environ 13-14 ans et au-delà), c'est-à-dire un âge où le raisonnement abstrait et hypothétique est en place. Il n'est pas conçu pour le primaire ni le début du secondaire, où les risques cognitifs sont plus aigus et où l'usage de l'IA appelle une médiation adulte nettement plus structurée que ce que prévoit ce cadre.
 
 **Extension au supérieur.** Ce cadre s'applique aussi à l'enseignement supérieur (université, classes préparatoires, BTS, etc.), où il est fréquemment repris. Le cœur de l'analyse — double validité (intégrité et cognitive) et calibrage novice/expert — y transfère sans changement : un étudiant reste *novice* sur la plupart des résultats d'apprentissage nouveaux, et c'est cette position par RA, non le niveau d'études, qui commande le risque cognitif. En revanche, trois paramètres de contexte changent et doivent être ajustés (voir « Contraintes » et « Médiation enseignante ») : (a) les étudiants sont **adultes**, ce qui modifie l'admissibilité des comptes et la base de consentement ; (b) la **médiation enseignante continue** est souvent moins praticable (cours magistral, travail autonome) ; (c) l'**autonomie** attendue de l'apprenant est plus grande. Le primaire et le début du secondaire restent hors périmètre.
 
