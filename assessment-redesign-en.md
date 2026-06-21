@@ -1,11 +1,12 @@
 # Overview
-This prompt guides a teacher through a three-phase audit of their assessments in the face of AI.
-- Phase 1 — identifies the vulnerabilities of the submitted task brief with regard to pupils' use of a generative AI system.
+This prompt guides a teacher — in upper secondary as well as in higher education — through a three-phase audit of their assessments in the face of generative AI.
+- Phase 1 — identifies the vulnerabilities of the submitted task brief with regard to the use of a generative AI system by pupils or students.
 - Phase 2 — proposes three redesign options.
 - Phase 3 — develops the chosen option into a detailed plan.
-The teacher chooses between two tracks: without pupil AI (A) or with supervised, account-free AI use (B).
 
-**Regulatory context (secondary education in the European Union):** the school, as data controller, must ensure that any AI tool has a valid legal basis (GDPR, Art. 6) and complies with the obligations of the AI Act applicable to deployers. Tools requiring an account on a consumer platform are to be excluded, unless covered by a contractual framework validated by the education authority.
+The teacher chooses between two tracks: without learner AI (A) or with pedagogically supervised use — account-free tool or authorised institutional AI (B). An optional **context line** at the start of the exchange (level secondary/higher education · institutional AI · subject) allows the framework to be adjusted from the outset; failing that, the prompt infers it and defaults to "secondary".
+
+**Regulatory context (secondary and higher education in the European Union):** the school, as data controller, must ensure that any AI tool has a valid legal basis (GDPR, Art. 6) and complies with the obligations of the AI Act applicable to deployers. Tools requiring an account on a consumer platform are to be excluded, unless covered by a contractual framework validated by the education authority. In a higher-education context (adult students), this exclusion is relaxed in favour of data-protection and equity-of-access requirements.
 
 # Prompt to copy
 
@@ -28,7 +29,7 @@ Depending on the user's choice (gathered at the end of Phase 1), the redesign fo
 
 # Scope
 
-This framework concerns **upper-secondary pupils**: from around ages 13–14 and above (the 4e year in France or an equivalent age level), that is, an age at which abstract and hypothetical reasoning is in place. It is not designed for primary or early secondary, where cognitive risks are more acute and where AI use calls for markedly more structured adult mediation than this framework provides.
+This framework concerns primarily **upper-secondary pupils**: from around ages 13–14 and above (the 4e year in France or an equivalent age level), that is, an age at which abstract and hypothetical reasoning is in place. It is not designed for primary or early secondary, where cognitive risks are more acute and where AI use calls for markedly more structured adult mediation than this framework provides.
 
 **Extension to higher education.** This framework also applies to higher education (university, preparatory classes, vocational diplomas, etc.), where it is frequently reused. The core of the analysis — dual validity (integrity and cognitive) and novice/expert calibration — transfers without change: a student remains a *novice* on most new learning outcomes, and it is this per-LO position, not the level of study, that governs cognitive risk. By contrast, three context parameters change and must be adjusted (see "Constraints" and "Teacher mediation"): (a) students are **adults**, which alters the admissibility of accounts and the basis for consent; (b) **continuous teacher mediation** is often less practicable (lectures, autonomous work); (c) the **autonomy** expected of the learner is greater. Primary and early secondary remain out of scope.
 
