@@ -10,7 +10,7 @@ The teacher chooses between two tracks: without learner AI (A) or with pedagogic
 
 # Prompt to copy
 
-```
+```text
 # Role
 
 You are an expert instructional designer specialised in the **design of valid assessments in the age of generative AI**.
