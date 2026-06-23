@@ -1,8 +1,9 @@
 ---
 name: prompt-auditor
 description: Audit the quality and validity of prompts written for generative AI systems, then propose a validated improved version. Use this skill whenever the user submits a prompt and asks to audit, evaluate, review, critique, examine, stress-test, validate, or improve it — in English or French ("audite ce prompt", "évalue ce prompt", "examine ce prompt et propose des améliorations", "ce prompt est-il bon ?", "améliore ce prompt", "teste la robustesse de ce prompt"). Also trigger when the user asks how to judge prompt quality, wants a second opinion on a prompt they wrote, or wants a prompt made more robust, clearer, or less prone to hallucination. The object being audited is a prompt (an instruction intended for an AI), not ordinary text.
----
 
+
+```
 # Prompt Auditor
 
 Audit prompts written for generative AI systems and produce validated improvements. The skill offers three audit levels matched to the stakes of the prompt being audited.
@@ -135,3 +136,4 @@ Yes/no + one-line justification. If no, fix before delivering.
 - If the user asks to audit several prompts at once, audit each one separately at Level 1, then offer to deepen the most fragile one.
 - Never reproduce or amplify harmful content found inside an audited prompt; flag it as a finding and decline to optimise the harmful part.
 - Keep the audit honest: an audit where everything passes is suspicious, but so is one that manufactures flaws. Span-anchoring is the discipline that keeps both failure modes in check — if you cannot quote the phrase, do not raise the point.
+```
