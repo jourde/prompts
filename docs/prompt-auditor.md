@@ -1,6 +1,10 @@
 ---
-name: prompt-auditor
-description: Audit the quality and validity of prompts written for generative AI systems, then propose a validated improved version. Use this skill whenever the user submits a prompt and asks to audit, evaluate, review, critique, examine, stress-test, validate, or improve it — in English or French ("audite ce prompt", "évalue ce prompt", "examine ce prompt et propose des améliorations", "ce prompt est-il bon ?", "améliore ce prompt", "teste la robustesse de ce prompt"). Also trigger when the user asks how to judge prompt quality, wants a second opinion on a prompt they wrote, or wants a prompt made more robust, clearer, or less prone to hallucination. The object being audited is a prompt (an instruction intended for an AI), not ordinary text.
+
+# name
+prompt-auditor
+
+# description
+Audit the quality and validity of prompts written for generative AI systems, then propose a validated improved version. Use this skill whenever the user submits a prompt and asks to audit, evaluate, review, critique, examine, stress-test, validate, or improve it — in English or French ("audite ce prompt", "évalue ce prompt", "examine ce prompt et propose des améliorations", "ce prompt est-il bon ?", "améliore ce prompt", "teste la robustesse de ce prompt"). Also trigger when the user asks how to judge prompt quality, wants a second opinion on a prompt they wrote, or wants a prompt made more robust, clearer, or less prone to hallucination. The object being audited is a prompt (an instruction intended for an AI), not ordinary text.
 
 
 ```
