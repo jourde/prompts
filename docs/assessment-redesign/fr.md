@@ -10,6 +10,8 @@ L'enseignant choisit entre deux parcours : sans IA apprenant (A) ou avec usage p
 
 # Prompt à copier
 
+!!! note "Prompt"
+
 ```
 # Rôle
 
