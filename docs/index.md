@@ -1,12 +1,12 @@
 # Prompts
 
-Bibliothèque de prompts pour l'IA générative en contexte éducatif.
-A library of prompts for generative AI in an educational context.
+- Bibliothèque de prompts pour l'IA générative en contexte éducatif.
+- A library of prompts for generative AI in an educational context.
 
-## Contenu - Contentr
+## Contenu - Content
 
-- [Assessment Redesign](assessment-redesign/index.md) — refonte d'évaluations à l'ère de l'IA
-- [Prompt Auditor](prompt-auditor.md) — audit et amélioration de prompts
+- [Reconception d'évaluation - Assessment redesign](assessment-redesign/index.md) — refonte d'évaluations à l'ère de l'IA
+- [Auditeur de prompt - Prompt auditor](prompt-auditor.md) — audit et amélioration de prompts
 
 ---
 
